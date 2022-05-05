@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+        <script src="src/sketch.js"></script>
+        <link rel="stylesheet" href="src/style.css" />
+        <title>Math 2030 - Fractal Project</title>
+    </head>
+    <body>
+        <h1>
+            <span class="green">Pascal</span>-<span class="beige"
+                >Sierpiński</span
+            >
+            Triangle
+        </h1>
+        <div class="main">
+            <main></main>
+            <div class="main__editor">
+                <p>Toggle use points/digits:</p>
+                <input type="checkbox" onclick="toggleUsePoints()"></input>
+
+                <p>Set canvas size</p>
+                <input type="range" min="200" max="1000" step="100" value="500" onclick="setCanvasSize(value)"></input>
+
+                <p>Set node spacing</p>
+                <input type="range" min="1" max="100" step="1" value="5" onclick="setPointSpacing(value)"></input>
+
+                <p>Set node size</p>
+                <input type="range" min="1" max="100" value="5" onclick="setPointSize(value)"></input> 
+
+            </div>
+        </div>
+    </body>
+</html>
